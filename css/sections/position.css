@@ -1,6 +1,7 @@
 .position-example-container {
   display: flex;
   width: 640px;
+  margin-left: 50px;
   padding: 10px;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -52,6 +53,10 @@
   z-index: 1;
 }
 
+.card__content h4 {
+  margin-top: 0;
+}
+
 .card__image {
   display: block;
   position: absolute;
@@ -63,10 +68,6 @@
   object-position: center;
   filter: brightness(0.6);
   z-index: 0;
-}
-
-.card__content h4 {
-  margin-top: 0;
 }
 
 /*  card enchantment - flip card */
@@ -98,7 +99,7 @@
   backface-visibility: hidden;
 }
 
-/* Vidiniai koretelÄ—s elementai su absolute */
+/* Vidiniai koretelės elementai su absolute */
 
 .card__price {
   position: absolute;
@@ -123,7 +124,7 @@
   gap: 20px;
 }
 
-/* Vidiniai koretelÄ—s elementai su flex*/
+/* Vidiniai koretelės elementai su flex*/
 
 .d-flex {
   display: flex;
@@ -157,4 +158,22 @@
 
 .flex-grow-1 {
   flex-grow: 1;
+}
+
+.position-example-container--scrollable {
+  height: 300px;
+  width: 655px;
+  overflow: scroll;
+}
+
+.square--sticky-top {
+  position: sticky;
+  top: 0;
+  background: green;
+}
+
+.square--sticky-bottom {
+  position: sticky;
+  bottom: 0;
+  background: yellow;
 }

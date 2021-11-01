@@ -230,6 +230,107 @@
   
           <article>
             <h3>Kortelės su kaina ir mygtuku pastovioje pozicijoje</h3>
+      <section id="relative" class="navbar-anchor-fix">
+        <div class="container container--narrow container--with-sidebar-left mt-5">
+        <h2 class="pb-2">Relative</h2>
+        <p>
+          Tai elemento pozicionavimas, pagal standartinę (static) elemento
+          poziciją. Tam naudojamos CSS savybės:
+          <strong>top, right, bottom, left</strong>
+        </p>
+        <article>
+          <h3 class="my-3 text-center">Position relative pavyzdys</h3>
+          <div class="position-example-container">
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square">3</div>
+            <div class="square">4</div>
+            <div class="square">5</div>
+            <div class="square">6</div>
+            <div class="square square--relative">7</div>
+            <div class="square">8</div>
+            <div class="square">9</div>
+            <div class="square">10</div>
+            <div class="square">11</div>
+            <div class="square">12</div>
+            <div class="square">13</div>
+            <div class="square">14</div>
+            <div class="square">15</div>
+            <div class="square">16</div>
+            <div class="square">17</div>
+            <div class="square">18</div>
+            <div class="square">19</div>
+            <div class="square">20</div>
+            <div class="square">21</div>
+            <div class="square">22</div>
+            <div class="square">23</div>
+            <div class="square">24</div>
+            <div class="square">25</div>
+            <div class="square">26</div>
+            <div class="square">27</div>
+            <div class="square">28</div>
+          </div>
+        </article>
+
+        <article>
+          <h3 class="mt-4 mb-3">Kortelės su foninėmis patamsintomis nuotraukomis</h3>
+          <article class="card">
+            <div class="card__content">
+              <h4>Kortelė</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Nostrum dignissimos laboriosam culpa aperiam architecto porro,
+                animi commodi similique officiis deleniti quo sint dolor vel
+                fugit.</p>
+            </div>
+            <img class="card__image"
+              src="https://i.picsum.photos/id/1043/300/600.jpg?hmac=a_K64mfonTPzUqqO3LbD3UxS2mkpESP_kKHNhZM7f3c" />
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <h4>Kortelė</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Nostrum dignissimos laboriosam culpa aperiam architecto porro,
+                animi commodi similique officiis deleniti quo sint dolor vel
+                fugit.</p>
+            </div>
+            <img class="card__image" src="https://unsplash.it/500/755" />
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <h4>Kortelė</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Nostrum dignissimos laboriosam culpa aperiam architecto porro,
+                animi commodi similique officiis deleniti quo sint dolor vel
+                fugit.</p>
+            </div>
+            <img class="card__image" src="https://unsplash.it/500/700" />
+          </article>
+        </article>
+
+        <article>
+          <h3 class="mt-4 mb-3">Dvipusės kortelės</h3>
+          <div class="card-container">
+            <article class="card card--two-sided">
+              <div class="card__inner">
+                <div class="card__content">
+                  <h4>Kortelė</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nostrum dignissimos laboriosam culpa aperiam architecto
+                    porro,
+                    animi commodi similique officiis deleniti quo sint dolor vel
+                    fugit.</p>
+                </div>
+                <img class="card__image" src="https://unsplash.it/500/755" />
+              </div>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <section id="absolute" class="navbar-anchor-fix">
+        <div class="container container--narrow container--with-sidebar-left mt-5">
+          <article>
+            <h3 class="mt-4 mb-3">Kortelės su kaina ir mygtuku pastovioje pozicijoje</h3>
             <div class="card-container">
               <article class="card">
                 <div class="card__content">
@@ -271,11 +372,97 @@
               </article>
             </div>
           </article>
-          </div>
+        </div>
+      </section>
 
+      <section id="fixed" class="navbar-anchor-fix">
+        <div class="container container--narrow container--with-sidebar-left mt-5">
+          <h2>Fixed</h2>
+          <p>
+            <strong>position: fixed</strong> elementai visada išlieka toje pačioje
+            viewport vietoje. Atsispyrimui nuo vieport naudojame savybes
+            <strong>top, right, bottom ir left</strong>.
+          </p>
+          <p>
+            Šio puslapio navigacinė juosta (navbar) pririšama prie matomo lango
+            (viewport) naudojant <strong>position: fixed;</strong>
+          </p>
+        </div>
         </section>
 
-      </div>
+        <section id="sticky" class="navbar-anchor-fix">
+          <div class="container container--narrow container--with-sidebar-left mt-5">
+          <h2>Sticky</h2>
+          <p>
+            Tai toks pozicionavimo tipas, kuomet ieškomas elementas tėvinėje
+            hierarchijoje, kuriame yra įgalintas scroll'inimas. Tuomet nuo to
+            elemento kontūrų, yra atsispiriama naudojant CSS savybes <strong>top,
+              right, bottom, left</strong>.
+          </p>
+          <article>
+            <h3 class="text-center mt-4 mb-3">Position sticky pavyzdys</h3>
+            <div class="position-example-container position-example-container--scrollable">
+              <div class="square">1</div>
+              <div class="square">2</div>
+              <div class="square">3</div>
+              <div class="square">4</div>
+              <div class="square">5</div>
+              <div class="square">6</div>
+              <div class="square square--sticky-top">7</div>
+              <div class="square">8</div>
+              <div class="square">9</div>
+              <div class="square">10</div>
+              <div class="square square--sticky-top">11</div>
+              <div class="square">12</div>
+              <div class="square">13</div>
+              <div class="square">14</div>
+              <div class="square">15</div>
+              <div class="square square--sticky-top">16</div>
+              <div class="square">17</div>
+              <div class="square">18</div>
+              <div class="square">19</div>
+              <div class="square">20</div>
+              <div class="square">21</div>
+              <div class="square">22</div>
+              <div class="square">23</div>
+              <div class="square">24</div>
+              <div class="square">25</div>
+              <div class="square square--sticky-bottom">26</div>
+              <div class="square">27</div>
+              <div class="square">28</div>
+              <!-- .square{$@29}*7 -->
+              <div class="square">29</div>
+              <div class="square">30</div>
+              <div class="square">31</div>
+              <div class="square">32</div>
+              <div class="square">33</div>
+              <div class="square">34</div>
+              <div class="square">35</div>
+              <div class="square">36</div>
+              <div class="square">37</div>
+              <div class="square">38</div>
+              <div class="square">39</div>
+              <div class="square">40</div>
+              <div class="square">41</div>
+              <div class="square">42</div>
+              <div class="square">43</div>
+              <div class="square">44</div>
+              <div class="square">45</div>
+              <div class="square">46</div>
+              <div class="square">47</div>
+              <div class="square">48</div>
+              <div class="square">49</div>
+              <div class="square">50</div>
+              <div class="square">51</div>
+              <div class="square">52</div>
+              <div class="square">53</div>
+              <div class="square">54</div>
+              <div class="square">55</div>
+              <div class="square">56</div>
+            </div>
+          </article>
+          </div>
+        </section>
     </main>
   </body>
 </html>
