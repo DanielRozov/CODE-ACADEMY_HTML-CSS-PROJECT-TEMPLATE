@@ -36,7 +36,7 @@
                 <a class="navbar__link" href="./flex.html">Flex</a>
               </li>
               <li>
-                <a class="navbar__link active" href="./position.html"
+                <a class="navbar__link active active" href="./position.html"
                   >Position</a
                 >
               </li>
@@ -80,6 +80,156 @@
         </p>
       </div>
 
+        <section id="relative" class="navbar-anchor-fix">
+          <div
+          class="container container--narrow container--with-sidebar-left mt-5"
+        >
+          <h2 class="mb-2">Relative</h2>
+          <p>
+            Tai elemento pozicionavimas, pagal standartinę (static) elemento
+            poziciją. Tam naudojamos CSS savybės:
+            <strong>top, right, bottom, left</strong>
+          </p>
+          <article>
+            <h3 class="my-3">Position relative pavyzdys</h3>
+            <div class="position-example-container">
+              <div class="square">1</div>
+              <div class="square">2</div>
+              <div class="square">3</div>
+              <div class="square">4</div>
+              <div class="square">5</div>
+              <div class="square">6</div>
+              <div class="square square--relative">7</div>
+              <div class="square">8</div>
+              <div class="square">9</div>
+              <div class="square">10</div>
+              <div class="square">11</div>
+              <div class="square">12</div>
+              <div class="square">13</div>
+              <div class="square">14</div>
+              <div class="square">15</div>
+              <div class="square">16</div>
+              <div class="square">17</div>
+              <div class="square">18</div>
+              <div class="square">19</div>
+              <div class="square">20</div>
+              <div class="square">21</div>
+              <div class="square">22</div>
+              <div class="square">23</div>
+              <div class="square">24</div>
+              <div class="square">25</div>
+              <div class="square">26</div>
+              <div class="square">27</div>
+              <div class="square">28</div>
+          </article>
+          </div>
+        </section>
+
+        <section id="absolute" class="navbar-anchor-fix" >
+          <div
+          class="container container--narrow container--with-sidebar-left mt-5"
+        >
+          <h2>Absolute</h2>
+          <p>
+            Tai toks pozicionavimo tipas, kuomet yra ieškomas pirmas tėvinės
+            hierarchijos elementas, kurio position <strong>nėra</strong>
+            static. Radus tokį elementą, atsispiriama nuo jo kontūrų
+            naudojant savybes <strong>top, right, bottom, left</strong>.
+            Jeigu tėvinės hierarchijos šakoje nėra randamas elementas su
+            <strong>ne static</strong> position tipu, elementas atsispirs
+            nuo vieport kontūrų, matomų puslapio viršuje. <br>
+            Nustačius <strong>position: absolute</strong>, kiti elementai jo
+            nebemato ir yra išdėstomi, tarsi jo nebūtų.
+          </p>
+          <article>
+            <h3>Position absolute pavyzdys</h3>
+            <div class="position-example-container pos-relative">
+              <div class="square">1</div>
+              <div class="square">2</div>
+              <div class="square">3</div>
+              <div class="square">4</div>
+              <div class="square">5</div>
+              <div class="square">6</div>
+              <div class="square square--absolute">7</div>
+              <div class="square">8</div>
+              <div class="square">9</div>
+              <div class="square">10</div>
+              <div class="square">11</div>
+              <div class="square">12</div>
+              <div class="square">13</div>
+              <div class="square">14</div>
+              <div class="square">15</div>
+              <div class="square">16</div>
+              <div class="square">17</div>
+              <div class="square">18</div>
+              <div class="square">19</div>
+              <div class="square">20</div>
+              <div class="square">21</div>
+              <div class="square">22</div>
+              <div class="square">23</div>
+              <div class="square">24</div>
+              <div class="square">25</div>
+              <div class="square">26</div>
+              <div class="square">27</div>
+              <div class="square">28</div>
+            </div>
+          </article>
+          <article>
+            <h3>Kortelės su foninėmis patamsintomis nuotraukomis</h3>
+            <article class="card">
+              <div class="card__content">
+                <h4>Kortelė</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nostrum dignissimos laboriosam culpa aperiam architecto porro,
+                  animi commodi similique officiis deleniti quo sint dolor vel
+                  fugit.</p>
+              </div>
+              <img class="card__image"
+                src="https://i.picsum.photos/id/1043/300/600.jpg?hmac=a_K64mfonTPzUqqO3LbD3UxS2mkpESP_kKHNhZM7f3c" />
+            </article>
+            <article class="card">
+              <div class="card__content">
+                <h4>Kortelė</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nostrum dignissimos laboriosam culpa aperiam architecto porro,
+                  animi commodi similique officiis deleniti quo sint dolor vel
+                  fugit.</p>
+              </div>
+              <img class="card__image" src="https://unsplash.it/500/755" />
+            </article>
+            <article class="card">
+              <div class="card__content">
+                <h4>Kortelė</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nostrum dignissimos laboriosam culpa aperiam architecto porro,
+                  animi commodi similique officiis deleniti quo sint dolor vel
+                  fugit.</p>
+              </div>
+              <img class="card__image" src="https://unsplash.it/500/700" />
+            </article>
+          </article>
+  
+          <article>
+            <h3>Dvipusės kortelės</h3>
+            <div class="card-container">
+              <article class="card card--two-sided">
+                <div class="card__inner">
+                  <div class="card__content">
+                    <h4>Kortelė</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Nostrum dignissimos laboriosam culpa aperiam architecto
+                      porro,
+                      animi commodi similique officiis deleniti quo sint dolor vel
+                      fugit.</p>
+                  </div>
+                  <img class="card__image" src="https://unsplash.it/500/755" />
+                </div>
+              </article>
+            </div>
+          </article>
+  
+          <article>
+            <h3>Kortelės su kaina ir mygtuku pastovioje pozicijoje</h3>
       <section id="relative" class="navbar-anchor-fix">
         <div class="container container--narrow container--with-sidebar-left mt-5">
         <h2 class="pb-2">Relative</h2>

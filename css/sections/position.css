@@ -26,6 +26,17 @@
   right: 40px;
 }
 
+.pos-relative {
+  position: relative;
+}
+
+.square--absolute {
+  position: absolute;
+  background: red;
+  top: 0;
+  left: 0;
+}
+
 .card {
   position: relative;
   display: inline-block;
@@ -33,6 +44,17 @@
   min-height: 300px;
   color: white;
   box-shadow: 0 2px 4px 2px #0005;
+}
+
+.card__content {
+  height: 100%;
+  position: relative;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.card__content h4 {
+  margin-top: 0;
 }
 
 .card__image {
@@ -46,17 +68,6 @@
   object-position: center;
   filter: brightness(0.6);
   z-index: 0;
-}
-
-.card__content {
-  height: 100%;
-  position: relative;
-  padding: 1rem;
-  z-index: 1;
-}
-
-.card__content h4 {
-  margin-top: 0;
 }
 
 /*  card enchantment - flip card */
