@@ -1,7 +1,6 @@
 .position-example-container {
   display: flex;
   width: 640px;
-  margin-left: 50px;
   padding: 10px;
   flex-wrap: wrap;
   align-content: flex-start;
