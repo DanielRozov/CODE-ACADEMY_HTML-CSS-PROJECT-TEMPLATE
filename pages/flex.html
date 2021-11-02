@@ -54,20 +54,132 @@
         <ul>
           <li><a class="sidebar__link" href="#main">Pagrindinis</a></li>
           <li>
-            <a class="sidebar__link" href="#git-init">Pasirengimas darbui</a>
+            <a class="sidebar__link" href="#axis">Flexbox ašys</a>
           </li>
           <li>
-            <a class="sidebar__link" href="#git-files-update"
-              >Failų atnaujinimas</a
-            >
-          </li>
-          <li>
-            <a class="sidebar__link" href="#git-feature-flow"
-              >Naujo funkcionalumo kūrimas</a
+            <a class="sidebar__link" href="#links"
+              >Linkai</a
             >
           </li>
         </ul>
       </nav>
     </aside>
+
+    <main id="main" class="pt-navbar-height">
+      <div
+        class="container container--narrow container--with-sidebar-left mt-4"
+      >
+        <h1 class="mb-3">Pagrindinė „flexbox“ koncepcija</h1>
+        <p>
+          „Flexible Box Module“, paprastai vadinamas „flexbox“, buvo sukurtas
+          kaip vienmatis išdėstymo modelis ir kaip technika, galinti pasiūlyti
+          erdvės paskirstymą tarp sąsajos elementų ir galingas derinimo
+          galimybes. Kai apibūdiname „flexbox“ kaip vienmatį, apibūdiname faktą,
+          kad „flexbox“ veikia su išdėstymu po vieną matmenį – kaip eilutę arba
+          kaip stulpelį. Tai galima palyginti su CSS Grid Layout 2D modeliu,
+          kuris kartu valdo stulpelius ir eilutes.
+        </p>
+      </div>
+
+      <section id="axis" class="navbar-anchor-fix">
+        <div
+          class="container container--narrow container--with-sidebar-left mt-5"
+        >
+          <h2 class="mb-2">Dvi „flexbox“ ašys</h2>
+          <div>
+            <p>
+              Dirbdami su „flexbox“ turite galvoti apie dvi ašis – pagrindinę ir
+              skersinę. Pagrindinę ašį apibrėžia <br />
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction"
+                ><strong><em>flex-direction</em></strong></a
+              >
+              savybė, o skersinė ašis eina jai statmenai. Viskas, ką darome su
+              „flexbox“, yra susiję su šiomis ašimis.
+            </p>
+
+            <article>
+              <h3 class="my-2">Pagrindinė ašis</h3>
+              <p>
+                Pagrindinė ašis apibrėžiama <strong>flex-direction</strong>,
+                kuri turi keturias galimas reikšmes:
+              </p>
+              <ul class="ul ml-3">
+                <li>row</li>
+                <li>row-reverse</li>
+                <li>column</li>
+                <li>column-reverse</li>
+              </ul>
+
+              <p>
+                Jei pasirinksite <strong>row</strong> arba
+                <strong>row-reverse</strong>, pagrindinė ašis eis išilgai
+                eilutės paklusdama <strong>inline-direction</strong> savybei.
+              </p>
+              <img src="../images/flex/main-axis_flex-direction_row.png" />
+              <p>
+                Pasirinkite <strong>column</strong> arba
+                <strong>column-reverse</strong> ir jūsų pagrindinė ašis veiks
+                nuo puslapio viršaus iki apačios paklusdama
+                <strong>inline-block</strong> savybei.
+              </p>
+              <img src="../images/flex/main-axis_flex-direction_column.png" />
+            </article>
+
+            <article>
+              <h3 class="my-2">Kryžminė ašis (<strong>cross-axis</strong>)</h3>
+              <p>
+                Kryžminė ašis eina statmenai pagrindinei ašiai, todėl jeigu
+                <strong>flex-direction</strong> pagrindinei ašiai nustatyta kaip
+                <strong>row</strong> arba <strong>row-reverse</strong>, kryžminė
+                ašis bus išdėstyta stulpeliu: (<strong>column</strong>).
+              </p>
+              <br />
+              <img src="../images/flex/cross-axis_flex-direction-row.png" />
+              <p>
+                Jeigu <strong>flex-direction</strong> pagrindinei ašiai
+                nustatyta kaip <strong>column</strong> arba
+                <strong>column-reverse</strong>, kryžminė ašis bus išdėstyta
+                eilute: (<strong>row</strong>).
+              </p>
+              <img src="../images/flex/cross-axis_flex-direction_column.png" />
+            </article>
+          </section>
+
+          <section id="links" class="navbar-anchor-fix">
+            <div
+              class="container container--narrow container--with-sidebar-left mt-5"
+            >
+              <article>
+                <h3>
+                Daugiau informacijos apie <strong>Flexbox</strong> :
+                  <ul>
+                    <li>
+                      <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"
+                      target="_blank"
+                      ><em>MDN Web Docs</em></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                      href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+                      target="_blank"
+                        ><em>Complete Guide to Flexbox</em></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                      href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-tricks"
+                        ><em>Flexbox-tricks</em></a
+                      >
+                    </li>
+                  </ul>
+                </h3>
+              </article>
+            </div>
+          </section>
+        </div>
+    </main>
   </body>
 </html>
